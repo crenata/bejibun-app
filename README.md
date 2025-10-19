@@ -28,39 +28,15 @@ bun ace install @bejibun/app
 How to use tha package.
 
 ```ts
-import type {RedisPipeline} from "@bejibun/app/types";
-import BaseController from "@bejibun/core/bases/BaseController";
-import Logger from "@bejibun/logger";
 import App from "@bejibun/app";
-import {BunRequest} from "bun";
 
-export default class TestController extends BaseController {
-    public async app(request: BunRequest): Promise<Response> {
-        await App.set("app", {hello: "world"});
-        const app = await App.get("app");
-
-        await App.connection("local").set("connection", "This is using custom connection.");
-        const connection = await App.connection("local").get("connection");
-
-        const pipeline = await App.pipeline((pipe: RedisPipeline) => {
-            pipe.set("app-pipeline-1", "This is app pipeline 1");
-            pipe.set("app-pipeline-2", "This is app pipeline 2");
-
-            pipe.get("app-pipeline-1");
-            pipe.get("app-pipeline-2");
-        });
-
-        const subscriber = await App.subscribe("app-subscribe", (message: string, channel: string) => {
-            Logger.setContext(channel).debug(message);
-        });
-        await App.publish("app-subscribe", "Hai app subscriber!");
-        setTimeout(async () => {
-            await subscriber.unsubscribe();
-        }, 500);
-
-        return super.response.setData({app, connection, pipeline}).send();
-    }
-}
+App.appPath("controllers/TestController.ts"); // .../app/controllers/TestController.ts
+App.basePath("package.json"); // .../package.json
+App.configPath("database.ts"); // .../config/database.ts
+App.databasePath("migrations/20251019_000001_tests.ts"); // .../database/migrations/20251019_000001_tests.ts
+App.publicPath("images/logo.png"); // .../public/images/logo.png
+App.resourcesPath("views/index.ts"); // .../resources/views/index.ts
+App.storagePath("app/public/file.txt"); // .../storage/app/public/file.txt
 ```
 
 ## Contributors
