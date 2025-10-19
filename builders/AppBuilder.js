@@ -11,6 +11,9 @@ export default class AppBuilder {
     basePath(_path) {
         return path.resolve(this.cwd, defineValue(_path, ""));
     }
+    commandsPath(_path) {
+        return path.resolve(this.cwd, `commands/${defineValue(_path, "")}`);
+    }
     configPath(_path) {
         return path.resolve(this.cwd, `config/${defineValue(_path, "")}`);
     }

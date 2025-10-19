@@ -6,6 +6,9 @@ export default class App {
     static basePath(path) {
         return new AppBuilder().basePath(path);
     }
+    static commandsPath(path) {
+        return new AppBuilder().commandsPath(path);
+    }
     static configPath(path) {
         return new AppBuilder().configPath(path);
     }

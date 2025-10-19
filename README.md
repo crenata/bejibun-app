@@ -32,6 +32,7 @@ import App from "@bejibun/app";
 
 App.appPath("controllers/TestController.ts"); // .../app/controllers/TestController.ts
 App.basePath("package.json"); // .../package.json
+App.commandsPath("HelloWorldCommand.ts"); // .../commands/HelloWorldCommand.ts
 App.configPath("database.ts"); // .../config/database.ts
 App.databasePath("migrations/20251019_000001_tests.ts"); // .../database/migrations/20251019_000001_tests.ts
 App.publicPath("images/logo.png"); // .../public/images/logo.png

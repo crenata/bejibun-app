@@ -9,6 +9,10 @@ export default class App {
         return new AppBuilder().basePath(path);
     }
 
+    public static commandsPath(path?: string): string {
+        return new AppBuilder().commandsPath(path);
+    }
+
     public static configPath(path?: string): string {
         return new AppBuilder().configPath(path);
     }
