@@ -29,6 +29,10 @@ export default class App {
         return new AppBuilder().resourcesPath(path);
     }
 
+    public static rootPath(): string {
+        return new AppBuilder().rootPath();
+    }
+
     public static storagePath(path?: string): string {
         return new AppBuilder().storagePath(path);
     }

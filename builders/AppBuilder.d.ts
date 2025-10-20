@@ -8,5 +8,6 @@ export default class AppBuilder {
     databasePath(_path?: string): string;
     publicPath(_path?: string): string;
     resourcesPath(_path?: string): string;
+    rootPath(): string;
     storagePath(_path?: string): string;
 }

@@ -36,6 +36,10 @@ export default class AppBuilder {
         return path.resolve(this.cwd, `resources/${defineValue(_path, "")}`);
     }
 
+    public rootPath(): string {
+        return this.cwd;
+    }
+
     public storagePath(_path?: string): string {
         return path.resolve(this.cwd, `storage/${defineValue(_path, "")}`);
     }

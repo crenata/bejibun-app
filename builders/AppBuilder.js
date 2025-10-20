@@ -26,6 +26,9 @@ export default class AppBuilder {
     resourcesPath(_path) {
         return path.resolve(this.cwd, `resources/${defineValue(_path, "")}`);
     }
+    rootPath() {
+        return this.cwd;
+    }
     storagePath(_path) {
         return path.resolve(this.cwd, `storage/${defineValue(_path, "")}`);
     }
