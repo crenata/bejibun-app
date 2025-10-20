@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [v0.1.13](https://github.com/crenata/bejibun-app/compare/v0.1.12...v0.1.13) - 2025-10-20
+
+### 🩹 Fixes
+
+### 📖 Changes
+What's New :
+- `.routesPath()` Path to root of routes directory
+
+### ❤️Contributors
+- Havea Crenata ([@crenata](https://github.com/crenata))
+- Ghulje ([@ghulje](https://github.com/ghulje))
+
+**Full Changelog**: https://github.com/crenata/bejibun-app/blob/master/CHANGELOG.md
+
+---
+
 ## [v0.1.12](https://github.com/crenata/bejibun-app/compare/v0.1.11...v0.1.12) - 2025-10-20
 
 ### 🩹 Fixes

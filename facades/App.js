@@ -21,6 +21,9 @@ export default class App {
     static resourcesPath(path) {
         return new AppBuilder().resourcesPath(path);
     }
+    static routesPath(path) {
+        return new AppBuilder().routesPath(path);
+    }
     static rootPath() {
         return new AppBuilder().rootPath();
     }

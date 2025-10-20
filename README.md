@@ -37,6 +37,7 @@ App.configPath("database.ts"); // .../config/database.ts
 App.databasePath("migrations/20251019_000001_tests.ts"); // .../database/migrations/20251019_000001_tests.ts
 App.publicPath("images/logo.png"); // .../public/images/logo.png
 App.resourcesPath("views/index.ts"); // .../resources/views/index.ts
+App.routesPath("api.ts"); // .../routes/api.ts
 App.rootPath(); // .../ root of bejibun framework
 App.storagePath("app/public/file.txt"); // .../storage/app/public/file.txt
 ```
