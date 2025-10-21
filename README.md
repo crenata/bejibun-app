@@ -30,16 +30,19 @@ How to use tha package.
 ```ts
 import App from "@bejibun/app";
 
-App.appPath("controllers/TestController.ts"); // .../app/controllers/TestController.ts
-App.basePath("package.json"); // .../package.json
-App.commandsPath("HelloWorldCommand.ts"); // .../commands/HelloWorldCommand.ts
-App.configPath("database.ts"); // .../config/database.ts
-App.databasePath("migrations/20251019_000001_tests.ts"); // .../database/migrations/20251019_000001_tests.ts
-App.publicPath("images/logo.png"); // .../public/images/logo.png
-App.resourcesPath("views/index.ts"); // .../resources/views/index.ts
-App.routesPath("api.ts"); // .../routes/api.ts
-App.rootPath(); // .../ root of bejibun framework
-App.storagePath("app/public/file.txt"); // .../storage/app/public/file.txt
+App.Path.appPath("controllers/TestController.ts"); // .../app/controllers/TestController.ts
+App.Path.basePath("package.json"); // .../package.json
+App.Path.commandsPath("HelloWorldCommand.ts"); // .../commands/HelloWorldCommand.ts
+App.Path.configPath("database.ts"); // .../config/database.ts
+App.Path.databasePath("migrations/20251019_000001_tests.ts"); // .../database/migrations/20251019_000001_tests.ts
+App.Path.publicPath("images/logo.png"); // .../public/images/logo.png
+App.Path.resourcesPath("views/index.ts"); // .../resources/views/index.ts
+App.Path.routesPath("api.ts"); // .../routes/api.ts
+App.Path.rootPath(); // .../ root of bejibun framework
+App.Path.storagePath("app/public/file.txt"); // .../storage/app/public/file.txt
+
+App.Maintenance.isMaintenanceMode(); // boolean
+App.Maintenance.getData(); // json
 ```
 
 ## Contributors
