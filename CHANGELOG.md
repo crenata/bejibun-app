@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [v0.1.16](https://github.com/crenata/bejibun-app/compare/v0.1.15...v0.1.16) - 2025-10-21
+
+### 🩹 Fixes
+
+### 📖 Changes
+What's New :
+- `.isMaintenanceMode()` Maintenance mode status
+
+### ❤️Contributors
+- Havea Crenata ([@crenata](https://github.com/crenata))
+- Ghulje ([@ghulje](https://github.com/ghulje))
+
+**Full Changelog**: https://github.com/crenata/bejibun-app/blob/master/CHANGELOG.md
+
+---
+
 ## [v0.1.15](https://github.com/crenata/bejibun-app/compare/v0.1.13...v0.1.15) - 2025-10-21
 
 ### 🩹 Fixes
