@@ -3,6 +3,37 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [v0.1.18](https://github.com/crenata/bejibun-app/compare/v0.1.17...v0.1.18) - 2025-10-21
+
+### 🩹 Fixes
+
+### 📖 Changes
+What's New :
+- Adding `.getData()` on Maintenance for get maintenance data
+
+Breaking Changes :
+- Restructure and separating class
+
+```ts
+// v0.1.17
+App.appPath(...);
+App.isMaintenanceMode();
+
+// v0.1.18
+App.Path.appPath(...);
+App.Maintenance.isMaintenanceMode();
+```
+
+Please upgrade to this version carefully.
+
+### ❤️Contributors
+- Havea Crenata ([@crenata](https://github.com/crenata))
+- Ghulje ([@ghulje](https://github.com/ghulje))
+
+**Full Changelog**: https://github.com/crenata/bejibun-app/blob/master/CHANGELOG.md
+
+---
+
 ## [v0.1.17](https://github.com/crenata/bejibun-app/compare/v0.1.15...v0.1.17) - 2025-10-21
 
 ### 🩹 Fixes

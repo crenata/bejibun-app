@@ -1,42 +1,10 @@
-import AppBuilder from "../builders/AppBuilder";
+import MaintenanceBuilder from "../builders/MaintenanceBuilder";
+import PathBuilder from "../builders/PathBuilder";
 export default class App {
-    /**
-     * Path Manager
-     */
-    static appPath(path) {
-        return new AppBuilder().appPath(path);
+    static get Path() {
+        return new PathBuilder();
     }
-    static basePath(path) {
-        return new AppBuilder().basePath(path);
-    }
-    static commandsPath(path) {
-        return new AppBuilder().commandsPath(path);
-    }
-    static configPath(path) {
-        return new AppBuilder().configPath(path);
-    }
-    static databasePath(path) {
-        return new AppBuilder().databasePath(path);
-    }
-    static publicPath(path) {
-        return new AppBuilder().publicPath(path);
-    }
-    static resourcesPath(path) {
-        return new AppBuilder().resourcesPath(path);
-    }
-    static routesPath(path) {
-        return new AppBuilder().routesPath(path);
-    }
-    static rootPath(path) {
-        return new AppBuilder().rootPath(path);
-    }
-    static storagePath(path) {
-        return new AppBuilder().storagePath(path);
-    }
-    /**
-     * Utils
-     */
-    static async isMaintenanceMode() {
-        return await new AppBuilder().isMaintenanceMode();
+    static get Maintenance() {
+        return new MaintenanceBuilder();
     }
 }

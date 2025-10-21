@@ -1,17 +1,13 @@
 import {defineValue} from "@bejibun/utils";
 import path from "path";
-import config from "@/config/app";
 
-export default class AppBuilder {
+export default class PathBuilder {
     protected cwd: string;
 
     public constructor() {
         this.cwd = process.cwd();
     }
 
-    /**
-     * Path Manager
-     */
     public appPath(_path?: string): string {
         return path.resolve(this.cwd, `app/${defineValue(_path, "")}`);
     }
@@ -50,12 +46,5 @@ export default class AppBuilder {
 
     public storagePath(_path?: string): string {
         return path.resolve(this.cwd, `storage/${defineValue(_path, "")}`);
-    }
-
-    /**
-     * Utils
-     */
-    public async isMaintenanceMode(): Promise<boolean> {
-        return Bun.file(config.maintenance.file).exists();
     }
 }
