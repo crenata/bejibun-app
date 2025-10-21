@@ -1,6 +1,9 @@
 export default class AppBuilder {
     protected cwd: string;
     constructor();
+    /**
+     * Path Manager
+     */
     appPath(_path?: string): string;
     basePath(_path?: string): string;
     commandsPath(_path?: string): string;
@@ -11,4 +14,8 @@ export default class AppBuilder {
     routesPath(_path?: string): string;
     rootPath(_path?: string): string;
     storagePath(_path?: string): string;
+    /**
+     * Utils
+     */
+    isMaintenanceMode(): Promise<boolean>;
 }

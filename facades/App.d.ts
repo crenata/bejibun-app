@@ -1,4 +1,7 @@
 export default class App {
+    /**
+     * Path Manager
+     */
     static appPath(path?: string): string;
     static basePath(path?: string): string;
     static commandsPath(path?: string): string;
@@ -9,4 +12,8 @@ export default class App {
     static routesPath(path?: string): string;
     static rootPath(path?: string): string;
     static storagePath(path?: string): string;
+    /**
+     * Utils
+     */
+    static isMaintenanceMode(): Promise<boolean>;
 }

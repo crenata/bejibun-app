@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [v0.1.16](https://github.com/crenata/bejibun-app/compare/v0.1.15...v0.1.16) - 2025-10-21
+## [v0.1.17](https://github.com/crenata/bejibun-app/compare/v0.1.15...v0.1.17) - 2025-10-21
 
 ### 🩹 Fixes
 

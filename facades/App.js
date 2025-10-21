@@ -1,5 +1,8 @@
 import AppBuilder from "../builders/AppBuilder";
 export default class App {
+    /**
+     * Path Manager
+     */
     static appPath(path) {
         return new AppBuilder().appPath(path);
     }
@@ -29,5 +32,11 @@ export default class App {
     }
     static storagePath(path) {
         return new AppBuilder().storagePath(path);
+    }
+    /**
+     * Utils
+     */
+    static async isMaintenanceMode() {
+        return await new AppBuilder().isMaintenanceMode();
     }
 }
