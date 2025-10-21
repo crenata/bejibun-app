@@ -33,8 +33,8 @@ export default class App {
         return new AppBuilder().routesPath(path);
     }
 
-    public static rootPath(): string {
-        return new AppBuilder().rootPath();
+    public static rootPath(path?: string): string {
+        return new AppBuilder().rootPath(path);
     }
 
     public static storagePath(path?: string): string {

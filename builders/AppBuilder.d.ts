@@ -9,6 +9,6 @@ export default class AppBuilder {
     publicPath(_path?: string): string;
     resourcesPath(_path?: string): string;
     routesPath(_path?: string): string;
-    rootPath(): string;
+    rootPath(_path?: string): string;
     storagePath(_path?: string): string;
 }

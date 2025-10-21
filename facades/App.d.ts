@@ -7,6 +7,6 @@ export default class App {
     static publicPath(path?: string): string;
     static resourcesPath(path?: string): string;
     static routesPath(path?: string): string;
-    static rootPath(): string;
+    static rootPath(path?: string): string;
     static storagePath(path?: string): string;
 }
