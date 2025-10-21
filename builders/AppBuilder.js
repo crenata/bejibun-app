@@ -30,7 +30,7 @@ export default class AppBuilder {
         return path.resolve(this.cwd, `routes/${defineValue(_path, "")}`);
     }
     rootPath(_path) {
-        return path.resolve(this.cwd, defineValue(`/${_path}`, ""));
+        return path.resolve(this.cwd, defineValue(_path, ""));
     }
     storagePath(_path) {
         return path.resolve(this.cwd, `storage/${defineValue(_path, "")}`);

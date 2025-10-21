@@ -41,7 +41,7 @@ export default class AppBuilder {
     }
 
     public rootPath(_path?: string): string {
-        return path.resolve(this.cwd, defineValue(`/${_path}`, ""));
+        return path.resolve(this.cwd, defineValue(_path, ""));
     }
 
     public storagePath(_path?: string): string {
